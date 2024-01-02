@@ -13,33 +13,37 @@
         <div class="left"></div>
 
         <div class="right">
-            <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi!
-                Sign up now to get started.</p>
-            <p>You know you want to.</p>
-            <h1>Let's do this!</h1>
-            <form action="/">
+            <div class="text">
+                <h2>The body achieves what the mind believes</h2>
+            </div>
+            <form action="/" class="form">
                 <div class="input">
                     <label for="firstname">FIRST NAME</label>
-                    <input type="text" name="firstname" id="firstname" placeholder="First Name">
-                
+                    <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+                </div>
+                <div class="input">
                     <label for="lastname">LAST NAME</label>
-                    <input type="text" name="lastname" id="lastname" placeholder="Last Name">
-            
+                    <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+                </div>
+                <div class="input">
                     <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email" placeholder="Email">
-                
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="input">
                     <label for="number">PHONE NUMBER</label>
                     <input type="text" name="number" id="number" placeholder="Phone Number">
-                
+                </div>
+                <div class="input">
                     <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password" placeholder="Password">
-                
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                </div>
+                <div class="input">
                     <label for="confirmpassword">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password">
+                    <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password" required>
                 </div>
                 <div class="buttons">
-                    <input type="submit" value="Sign Up">
-                    <p>Already have an account? <input type="button" value="Log In"></p>
+                    <input type="submit" value="Sign Up" class="signup">
+                    <p class="login">Already have an account? <button>Log In</button></p>
                 </div>
             </form>
         </div>
