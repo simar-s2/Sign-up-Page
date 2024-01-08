@@ -1,8 +1,8 @@
 :root {
     font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    --white: #fff;
-    --brown: #957568;
-    --black: #000508;
+    --white: #FAF9F6;
+    --brown: #92664A;
+    --black: #222222;
     --grey: #c9bfbf;
 }
 
@@ -22,7 +22,7 @@
 /* Right side of page */
 .right {
     background-color: var(--white);
-    padding: 6%;
+    padding: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,7 +33,7 @@
 /* Header text */
 .text {
     color: var(--brown);
-    height: 20vh;
+    height: 25vh;
     font-size: 3.5rem;
     font-weight: 800;
 }
@@ -53,14 +53,16 @@
     width: 90%;
     padding: 0.5rem;
     font-size: 1rem;
+    color: var(--black);
     background-color: var(--white);
     border-radius: 0.2rem;
-    border: solid 1px var(--grey);
+    border: solid 0.1rem var(--grey);
     margin-top: 2%;
 }
 
-input > label {
+.input > label {
     color: var(--black);
+    font-size: 0.8rem;
 }
 
 input::placeholder {
@@ -68,17 +70,17 @@ input::placeholder {
 }
 
 /* Buttons */
-
 .signup {
     font-size: 2rem;
-    width: 90%;
+    width: 100%;
+    font-weight: 600;
     padding: 0.8rem;
     color: var(--white);
     background-color: var(--brown);
     cursor: pointer;
     border: 0;
     border-radius: 0.5rem;
-    margin: 1rem auto 1rem auto;
+    margin: 2rem auto 1rem auto;
 }
 
 .login {
@@ -86,11 +88,19 @@ input::placeholder {
     color: var(--black);
 }
 
-.login > button {
-    font-size: 1.2rem;
-    font-weight: 900;
+.login > a {
+    font-weight: 800;
     color: var(--brown);
-    background-color: var(--white);
     cursor: pointer;
-    border: 0;
+}
+
+@media only screen and (max-width:1300px){
+    .text {
+        color: var(--brown);
+        height: 25vh;
+        font-size: 3rem;
+        font-weight: 800;
+    }
+
+
 }
